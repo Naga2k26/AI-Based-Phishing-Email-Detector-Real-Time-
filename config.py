@@ -23,8 +23,8 @@ class Config:
     DATABASE_PATH = os.environ.get('DATABASE_PATH', os.path.join(base_dir, 'data', 'detections.db'))
 
     # Email credentials for automated inbox scanning (leave blank to disable)
-    EMAIL_USERNAME = os.environ.get('EMAIL_USERNAME', 'naga70921@gmail.com')
-    EMAIL_PASSWORD = os.environ.get('EMAIL_PASSWORD', 'hzrehjnjkiucunhf')
+    EMAIL_USERNAME = os.environ.get('EMAIL_USERNAME', '')
+    EMAIL_PASSWORD = os.environ.get('EMAIL_PASSWORD', '')
     EMAIL_HOST = os.environ.get('EMAIL_HOST', 'imap.gmail.com')
     EMAIL_PORT = int(os.environ.get('EMAIL_PORT', 993))
 
